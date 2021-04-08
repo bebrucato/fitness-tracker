@@ -13,12 +13,12 @@ app.use(express.static("public"));
 
 mongoose.connect(
     process.env.MONGODB_URI || 'mongodb://localhost/workout',
-    {
-      useNewUrlParser: true,
+    {user: 'bebrucato', pass: 'KOOkoo@101',
+    useNewUrlParser: true,
       useUnifiedTopology: true,
       useCreateIndex: true,
       useFindAndModify: false
-    }
+}
   );
 
 const db = require("./models");
